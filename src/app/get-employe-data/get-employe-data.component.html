@@ -1,0 +1,32 @@
+<title>Get All Employee Data</title>
+
+<table>
+    <tr>
+        <th>Employee ID </th>
+        <th>Employee Name </th>
+        <th>Employee DOB </th>
+        <th>Contact </th>
+        <th>Company Name </th>
+        <th>Joining Date </th>
+        <th>Designation </th>
+        <th>Project </th>
+        <th>Manager </th>
+        <th>Salary </th>
+
+    </tr>
+    <tr *ngFor="let d of data">
+        <td>{{d.empId}}</td>
+        <td>{{d.name}}</td>
+        <td>{{d.DOB}}</td>
+        <td>{{d.contact}}</td>
+        <td>{{d.companyName}}</td>
+        <td>{{d.JoiningDate}}</td>
+        <td>{{d.designation}}</td>
+        <td>{{d.project}}</td>
+        <td>{{d.manager}}</td>
+        <td>{{d.salary}}</td>
+
+
+    </tr>
+
+</table>

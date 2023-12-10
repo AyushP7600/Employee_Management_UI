@@ -1,0 +1,34 @@
+<title>Get Employee Data</title>
+<br><br>
+<input type="number" id="delete" required style="height: 30px;" [(ngModel)]="data.id"><br><br>
+<input type="submit" style="height: 30px; width: 80px; background-color: rgb(177, 113, 238);" (click)="getEmployee()">
+<table>
+    <tr>
+        <th>Employee ID </th>
+        <th>Employee Name </th>
+        <th>Employee DOB </th>
+        <th>Contact </th>
+        <th>Company Name </th>
+        <th>Joining Date </th>
+        <th>Designation </th>
+        <th>Project </th>
+        <th>Manager </th>
+        <th>Salary </th>
+
+    </tr>
+    <tr>
+        <td>{{resp.empId}}</td>
+        <td>{{resp.name}}</td>
+        <td>{{resp.DOB}}</td>
+        <td>{{resp.contact}}</td>
+        <td>{{resp.companyName}}</td>
+        <td>{{resp.JoiningDate}}</td>
+        <td>{{resp.designation}}</td>
+        <td>{{resp.project}}</td>
+        <td>{{resp.manager}}</td>
+        <td>{{resp.salary}}</td>
+
+
+    </tr>
+
+</table>
